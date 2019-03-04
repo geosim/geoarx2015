@@ -1,0 +1,282 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="debug+profile|Win32">
+      <Configuration>debug+profile</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="debug+profile|x64">
+      <Configuration>debug+profile</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="profile|Win32">
+      <Configuration>profile</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="profile|x64">
+      <Configuration>profile</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ArxAppType>arx</ArxAppType>
+    <RDS>
+    </RDS>
+    <ProjectGuid>{C6AE9D96-A69E-4CE3-9FDF-37F978A32309}</ProjectGuid>
+    <ProjectName>geosim</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <CLRSupport>false</CLRSupport>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <UseOfAtl>false</UseOfAtl>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)'=='Release'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)'=='Debug'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)'=='debug+profile'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)'=='profile'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <PropertyGroup Label="Globals">
+    <TargetName Condition="'$(RDS)'!=''">$(RDS)$(ProjectName)</TargetName>
+  </PropertyGroup>
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="Autodesk.arx-2015.props" />
+  </ImportGroup>
+  <PropertyGroup Label="Configuration">
+    <PlatformToolset Condition="'$(ArxSDKPlatform)'=='v90'">v90</PlatformToolset>
+    <PlatformToolset Condition="'$(ArxSDKPlatform)'=='v100'">v100</PlatformToolset>
+    <PlatformToolset Condition="'$(ArxSDKPlatform)'=='v110'">v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>C:\GEOARX\GEOARX2015\geoarx\$(Configuration)\</OutDir>
+    <IntDir>C:\GEOARX\GEOARX2015\geoarx\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>C:\GEOARX\GEOARX2015\geoarx\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>C:\GEOARX\GEOARX2015\geoarx\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <MinimalRebuild Condition="'$(Configuration)'=='Debug' and '$(CLRSupport)'=='false'">true</MinimalRebuild>
+      <PreprocessorDefinitions Condition="'$(Platform)'=='x64'">_WIN64;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(UseOfMfc)'=='Dynamic'">_AFXEXT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='debug+profile|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='profile|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='debug+profile|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='profile|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">/D "GSDEBUG" %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='debug+profile|x64'">/D "GSDEBUG" /D "GSPROFILEFILE=_T(\"c:\\temp\\log.log\")" %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='profile|x64'">/D "GSDEBUG" %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">/D "GSDEBUG" %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='debug+profile|Win32'">/D "GSDEBUG" %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='profile|Win32'">/D "GSDEBUG" %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+    </Link>
+    <Link>
+      <AdditionalDependencies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AcMPolygonObj.lib;adeadsrx.lib;aseapi20.lib;asiapi20.lib;mapads.lib;Rpcrt4.lib;maparx.lib;topoadsrx.lib;htmlhelp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies Condition="'$(Configuration)|$(Platform)'=='debug+profile|Win32'">AcMPolygonObj.lib;adeadsrx.lib;aseapi20.lib;asiapi20.lib;mapads.lib;maparx.lib;topoadsrx.lib;htmlhelp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies Condition="'$(Configuration)|$(Platform)'=='profile|Win32'">AcMPolygonObj.lib;adeadsrx.lib;aseapi20.lib;asiapi20.lib;mapads.lib;maparx.lib;topoadsrx.lib;htmlhelp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories Condition="'$(Configuration)|$(Platform)'=='debug+profile|Win32'">%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories Condition="'$(Configuration)|$(Platform)'=='profile|Win32'">%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <Link>
+      <AdditionalDependencies Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">AcMPolygonObj.lib;adeadsrx.lib;aseapi20.lib;asiapi20.lib;mapads.lib;Rpcrt4.lib;maparx.lib;topoadsrx.lib;htmlhelp.lib;Rpcrt4.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies Condition="'$(Configuration)|$(Platform)'=='debug+profile|x64'">AcMPolygonObj.lib;adeadsrx.lib;aseapi20.lib;asiapi20.lib;mapads.lib;maparx.lib;topoadsrx.lib;htmlhelp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies Condition="'$(Configuration)|$(Platform)'=='profile|x64'">AcMPolygonObj.lib;adeadsrx.lib;aseapi20.lib;asiapi20.lib;mapads.lib;maparx.lib;topoadsrx.lib;htmlhelp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Link>
+      <AdditionalDependencies Condition="'$(Configuration)|$(Platform)'=='Release|x64'">AcMPolygonObj.lib;adeadsrx.lib;aseapi20.lib;asiapi20.lib;mapads.lib;maparx.lib;topoadsrx.lib;htmlhelp.lib;Rpcrt4.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>AcMPolygonObj.lib;adeadsrx.lib;aseapi20.lib;asiapi20.lib;mapads.lib;maparx.lib;topoadsrx.lib;htmlhelp.lib;Rpcrt4.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="acrxEntryPoint.cpp" />
+    <ClCompile Include="DocData.cpp" />
+    <ClCompile Include="geoarx.cpp" />
+    <ClCompile Include="gs_ade.cpp" />
+    <ClCompile Include="gs_area.cpp" />
+    <ClCompile Include="GS_ASE.CPP" />
+    <ClCompile Include="GS_ATTBL.CPP" />
+    <ClCompile Include="GS_CLASS.CPP" />
+    <ClCompile Include="GS_CMD.CPP" />
+    <ClCompile Include="GS_CONV.CPP" />
+    <ClCompile Include="GS_DBREF.CPP" />
+    <ClCompile Include="GS_DWG.CPP" />
+    <ClCompile Include="GS_ERROR.CPP" />
+    <ClCompile Include="GS_EVID.CPP" />
+    <ClCompile Include="gs_filtr.cpp" />
+    <ClCompile Include="GS_FIND.CPP" />
+    <ClCompile Include="GS_GPHDATA.cpp" />
+    <ClCompile Include="GS_GRAPH.CPP" />
+    <ClCompile Include="GS_GRID.CPP" />
+    <ClCompile Include="GS_IMPOR.CPP" />
+    <ClCompile Include="GS_INIT.CPP" />
+    <ClCompile Include="GS_LISP.CPP" />
+    <ClCompile Include="gs_list.cpp" />
+    <ClCompile Include="GS_LOCK.CPP" />
+    <ClCompile Include="GS_NETW.CPP" />
+    <ClCompile Include="GS_PLOT.CPP" />
+    <ClCompile Include="GS_PRJCT.CPP" />
+    <ClCompile Include="GS_QUERY.CPP" />
+    <ClCompile Include="GS_RESBF.CPP" />
+    <ClCompile Include="gs_sec.cpp" />
+    <ClCompile Include="gs_selst.cpp" />
+    <ClCompile Include="GS_SETV.CPP" />
+    <ClCompile Include="gs_sql.cpp" />
+    <ClCompile Include="Gs_svdb.cpp" />
+    <ClCompile Include="gs_thm.cpp" />
+    <ClCompile Include="gs_topo.cpp" />
+    <ClCompile Include="GS_USER.CPP" />
+    <ClCompile Include="gs_utily.cpp" />
+    <ClCompile Include="gs_waitdlg.cpp" />
+    <ClCompile Include="GS_WHIP.CPP" />
+    <ClCompile Include="StdAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='debug+profile|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='profile|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='debug+profile|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='profile|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="d2hAlias.h" />
+    <ClInclude Include="d2hMap.h" />
+    <ClInclude Include="DocData.h" />
+    <ClInclude Include="GSResource.h" />
+    <ClInclude Include="GS_ADE.H" />
+    <ClInclude Include="GS_AREA.H" />
+    <ClInclude Include="gs_ase.h" />
+    <ClInclude Include="GS_ATTBL.H" />
+    <ClInclude Include="GS_CLASS.H" />
+    <ClInclude Include="GS_CMD.H" />
+    <ClInclude Include="GS_CONV.H" />
+    <ClInclude Include="GS_DBREF.H" />
+    <ClInclude Include="GS_DWG.H" />
+    <ClInclude Include="GS_ERROR.H" />
+    <ClInclude Include="GS_EVID.H" />
+    <ClInclude Include="GS_FILTR.H" />
+    <ClInclude Include="GS_FIND.H" />
+    <ClInclude Include="GS_GPHDATA.h" />
+    <ClInclude Include="GS_GRAPH.H" />
+    <ClInclude Include="GS_GRID.H" />
+    <ClInclude Include="GS_IMPOR.H" />
+    <ClInclude Include="GS_INIT.H" />
+    <ClInclude Include="GS_LISP.H" />
+    <ClInclude Include="gs_list.h" />
+    <ClInclude Include="GS_LOCK.H" />
+    <ClInclude Include="GS_NETW.H" />
+    <ClInclude Include="GS_OPCOD.H" />
+    <ClInclude Include="GS_PLOT.H" />
+    <ClInclude Include="GS_PRJCT.H" />
+    <ClInclude Include="GS_QUERY.H" />
+    <ClInclude Include="GS_RESBF.H" />
+    <ClInclude Include="GS_SEC.H" />
+    <ClInclude Include="gs_selst.h" />
+    <ClInclude Include="GS_SETV.H" />
+    <ClInclude Include="gs_sql.h" />
+    <ClInclude Include="Gs_svdb.h" />
+    <ClInclude Include="gs_thm.h" />
+    <ClInclude Include="GS_TOPO.H" />
+    <ClInclude Include="GS_USER.H" />
+    <ClInclude Include="gs_utily.h" />
+    <ClInclude Include="gs_waitdlg.h" />
+    <ClInclude Include="GS_WHIP.H" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="StdAfx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="geoarx.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="ascending_order_8x8.bmp" />
+    <Image Include="class_set_16x16.bmp" />
+    <Image Include="class_set_32x16.bmp" />
+    <Image Include="descending_order_8x8.bmp" />
+    <Image Include="ExtractedLocked_32x16.bmp" />
+    <Image Include="ExtractedUnlocked_32x16.bmp" />
+    <Image Include="GEOsim.ico" />
+    <Image Include="gridMask_16x16.bmp" />
+    <Image Include="gridMask_32x16.bmp" />
+    <Image Include="GroupMask_16x16.bmp" />
+    <Image Include="GroupMask_32x16.bmp" />
+    <Image Include="nodeMask_16x16.bmp" />
+    <Image Include="nodeMask_32x16.bmp" />
+    <Image Include="poliMask_16x16.bmp" />
+    <Image Include="poliMask_32x16.bmp" />
+    <Image Include="project_16x16.bmp" />
+    <Image Include="project_32x16.bmp" />
+    <Image Include="second_16x16.bmp" />
+    <Image Include="second_32X16.bmp" />
+    <Image Include="Simulation_16x16.bmp" />
+    <Image Include="Simulation_32X16.bmp" />
+    <Image Include="spagMask_16x16.bmp" />
+    <Image Include="spagMask_32X16.bmp" />
+    <Image Include="surfMask_16x16.bmp" />
+    <Image Include="surfMask_32X16.bmp" />
+    <Image Include="textMask32X16.bmp" />
+    <Image Include="textMask_16x16.bmp" />
+    <Image Include="UnextractedLocked_32x16.bmp" />
+    <Image Include="UnextractedUnlocked_32x16.bmp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="geoarx.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

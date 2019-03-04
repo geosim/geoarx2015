@@ -1,0 +1,239 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+#include "GSResource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Italiano (Italia) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ITA)
+LANGUAGE LANG_ITALIAN, SUBLANG_ITALIAN
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG1 DIALOG 0, 0, 138, 130
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,109,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,81,109,50,14
+END
+
+IDD_BLOCKS DIALOGEX 0, 0, 294, 217
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "GEOsim - Scelta blocchi"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,113,196,50,14
+    PUSHBUTTON      "Annulla",IDCANCEL,175,196,50,14
+    PUSHBUTTON      "?",IDHELP,237,196,50,14
+    GROUPBOX        "Lista blocchi",IDC_STATIC,7,7,280,182
+    CONTROL         "",IDC_BLOCK_LIST,"SysListView32",LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_AUTOARRANGE | WS_BORDER | WS_TABSTOP,14,20,265,151
+    LTEXT           "Blocco corrente: ",IDC_CURR_BLOCK,15,176,256,9
+END
+
+IDD_SPLASH DIALOGEX 0, 0, 204, 158
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_BORDER
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_IMAGE,"Static",SS_BITMAP,87,111,15,13
+END
+
+IDD_WAIT_DLG DIALOGEX 0, 0, 313, 68
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+CAPTION "GEOsim"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 131
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 123
+    END
+
+    IDD_BLOCKS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 287
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 210
+    END
+
+    IDD_SPLASH, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 196
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 151
+    END
+
+    IDD_WAIT_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 306
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 62
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "001004b0"
+        BEGIN
+            VALUE "CompanyName", "IREN ACQUA GAS"
+            VALUE "FileDescription", "GEOsim"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "GEOsim"
+            VALUE "LegalCopyright", "Copyright © 2012"
+            VALUE "OriginalFilename", "geoarx.arx"
+            VALUE "ProductName", "GEOsim"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x10, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_GEOSIM              ICON                    "GEOsim.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_TEXT_MASK_16X16     BITMAP                  "textMask_16x16.bmp"
+IDB_GRID_MASK_16X16     BITMAP                  "gridMask_16x16.bmp"
+IDB_GROUP_MASK_16X16    BITMAP                  "GroupMask_16x16.bmp"
+IDB_NODE_MASK_16X16     BITMAP                  "nodeMask_16x16.bmp"
+IDB_POLYLINE_MASK_16X16 BITMAP                  "poliMask_16x16.bmp"
+IDB_PROJECT_16X16       BITMAP                  "project_16x16.bmp"
+IDB_SECOND_16X16        BITMAP                  "second_16x16.bmp"
+IDB_SIMULATION_MASK_16X16 BITMAP                  "Simulation_16x16.bmp"
+IDB_SPAGHETTI_MASK_16X16 BITMAP                  "spagMask_16x16.bmp"
+IDB_SURFACE_MASK_16X16  BITMAP                  "surfMask_16x16.bmp"
+IDB_UNEXTRACTEDUNLOCKED_32X16 BITMAP                  "UnextractedUnlocked_32x16.bmp"
+IDB_EXTRACTEDLOCKED_32X16 BITMAP                  "ExtractedLocked_32x16.bmp"
+IDB_EXTRACTEDUNLOCKED_32X16 BITMAP                  "ExtractedUnlocked_32x16.bmp"
+IDB_UNEXTRACTEDLOCKED_32X16 BITMAP                  "UnextractedLocked_32x16.bmp"
+IDB_GRID_MASK_32X16     BITMAP                  "gridMask_32x16.bmp"
+IDB_GROUP_MASK_32X16    BITMAP                  "GroupMask_32x16.bmp"
+IDB_NODE_MASK_32X16     BITMAP                  "nodeMask_32x16.bmp"
+IDB_POLYLINE_MASK_32X16 BITMAP                  "poliMask_32x16.bmp"
+IDB_PROJECT_32X16       BITMAP                  "project_32x16.bmp"
+IDB_SECOND_32X16        BITMAP                  "second_32X16.bmp"
+IDB_SIMULATION_MASK_32X16 BITMAP                  "Simulation_32X16.bmp"
+IDB_SPAGHETTI_MASK_32X16 BITMAP                  "spagMask_32X16.bmp"
+IDB_SURFACE_MASK_32X16  BITMAP                  "surfMask_32X16.bmp"
+IDB_TEXT_MASK_32X16     BITMAP                  "textMask32X16.bmp"
+IDB_DESCENDING_ORDER_8X8 BITMAP                  "descending_order_8x8.bmp"
+IDB_ASCENDING_ORDER_8X8 BITMAP                  "ascending_order_8x8.bmp"
+IDB_CLASS_SET_16X16     BITMAP                  "class_set_16x16.bmp"
+IDB_CLASS_SET_32X16     BITMAP                  "class_set_32x16.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_PROJNAME            "geoarx"
+END
+
+#endif    // Italiano (Italia) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

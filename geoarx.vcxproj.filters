@@ -1,0 +1,373 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="File di origine">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="File di intestazione">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="File di risorse">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="DocData.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="acrxEntryPoint.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="geoarx.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="gs_ade.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="gs_area.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="GS_ASE.CPP">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="GS_ATTBL.CPP">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="GS_CLASS.CPP">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="GS_CMD.CPP">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="GS_CONV.CPP">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="GS_DBREF.CPP">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="GS_DWG.CPP">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="GS_ERROR.CPP">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="GS_EVID.CPP">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="gs_filtr.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="GS_FIND.CPP">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="GS_GPHDATA.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="GS_GRAPH.CPP">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="GS_GRID.CPP">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="GS_IMPOR.CPP">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="GS_INIT.CPP">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="GS_LISP.CPP">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="gs_list.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="GS_LOCK.CPP">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="GS_NETW.CPP">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="GS_PLOT.CPP">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="GS_PRJCT.CPP">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="GS_QUERY.CPP">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="GS_RESBF.CPP">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="gs_sec.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="gs_selst.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="GS_SETV.CPP">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="gs_sql.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="Gs_svdb.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="gs_thm.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="gs_topo.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="GS_USER.CPP">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="gs_utily.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="GS_WHIP.CPP">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="gs_waitdlg.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="StdAfx.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="DocData.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="d2hAlias.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="d2hMap.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="GS_ADE.H">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="GS_AREA.H">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="gs_ase.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="GS_ATTBL.H">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="GS_CLASS.H">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="GS_CMD.H">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="GS_CONV.H">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="GS_DBREF.H">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="GS_DWG.H">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="GS_ERROR.H">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="GS_EVID.H">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="GS_FILTR.H">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="GS_FIND.H">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="GS_GPHDATA.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="GS_GRAPH.H">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="GS_GRID.H">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="GS_IMPOR.H">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="GS_INIT.H">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="GS_LISP.H">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="gs_list.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="GS_LOCK.H">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="GS_NETW.H">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="GS_OPCOD.H">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="GS_PLOT.H">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="GS_PRJCT.H">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="GS_QUERY.H">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="GS_RESBF.H">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="GS_SEC.H">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="gs_selst.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="GS_SETV.H">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="gs_sql.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="Gs_svdb.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="gs_thm.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="GS_TOPO.H">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="GS_USER.H">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="gs_utily.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="GS_WHIP.H">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="GSResource.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="gs_waitdlg.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="geoarx.rc">
+      <Filter>File di risorse</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="GEOsim.ico">
+      <Filter>File di risorse</Filter>
+    </Image>
+    <Image Include="textMask_16x16.bmp">
+      <Filter>File di risorse</Filter>
+    </Image>
+    <Image Include="gridMask_16x16.bmp">
+      <Filter>File di risorse</Filter>
+    </Image>
+    <Image Include="GroupMask_16x16.bmp">
+      <Filter>File di risorse</Filter>
+    </Image>
+    <Image Include="nodeMask_16x16.bmp">
+      <Filter>File di risorse</Filter>
+    </Image>
+    <Image Include="poliMask_16x16.bmp">
+      <Filter>File di risorse</Filter>
+    </Image>
+    <Image Include="project_16x16.bmp">
+      <Filter>File di risorse</Filter>
+    </Image>
+    <Image Include="second_16x16.bmp">
+      <Filter>File di risorse</Filter>
+    </Image>
+    <Image Include="Simulation_16x16.bmp">
+      <Filter>File di risorse</Filter>
+    </Image>
+    <Image Include="spagMask_16x16.bmp">
+      <Filter>File di risorse</Filter>
+    </Image>
+    <Image Include="surfMask_16x16.bmp">
+      <Filter>File di risorse</Filter>
+    </Image>
+    <Image Include="UnextractedUnlocked_32x16.bmp">
+      <Filter>File di risorse</Filter>
+    </Image>
+    <Image Include="ExtractedLocked_32x16.bmp">
+      <Filter>File di risorse</Filter>
+    </Image>
+    <Image Include="ExtractedUnlocked_32x16.bmp">
+      <Filter>File di risorse</Filter>
+    </Image>
+    <Image Include="UnextractedLocked_32x16.bmp">
+      <Filter>File di risorse</Filter>
+    </Image>
+    <Image Include="gridMask_32x16.bmp">
+      <Filter>File di risorse</Filter>
+    </Image>
+    <Image Include="GroupMask_32x16.bmp">
+      <Filter>File di risorse</Filter>
+    </Image>
+    <Image Include="nodeMask_32x16.bmp">
+      <Filter>File di risorse</Filter>
+    </Image>
+    <Image Include="poliMask_32x16.bmp">
+      <Filter>File di risorse</Filter>
+    </Image>
+    <Image Include="project_32x16.bmp">
+      <Filter>File di risorse</Filter>
+    </Image>
+    <Image Include="second_32X16.bmp">
+      <Filter>File di risorse</Filter>
+    </Image>
+    <Image Include="Simulation_32X16.bmp">
+      <Filter>File di risorse</Filter>
+    </Image>
+    <Image Include="spagMask_32X16.bmp">
+      <Filter>File di risorse</Filter>
+    </Image>
+    <Image Include="surfMask_32X16.bmp">
+      <Filter>File di risorse</Filter>
+    </Image>
+    <Image Include="textMask32X16.bmp">
+      <Filter>File di risorse</Filter>
+    </Image>
+    <Image Include="descending_order_8x8.bmp">
+      <Filter>File di risorse</Filter>
+    </Image>
+    <Image Include="ascending_order_8x8.bmp">
+      <Filter>File di risorse</Filter>
+    </Image>
+    <Image Include="class_set_16x16.bmp">
+      <Filter>File di risorse</Filter>
+    </Image>
+    <Image Include="class_set_32x16.bmp">
+      <Filter>File di risorse</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
